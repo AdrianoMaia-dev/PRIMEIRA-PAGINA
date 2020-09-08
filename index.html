@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<title>ARQUITETURA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		font-size: 1.1rem;
+	}
+	/*CSS MENU*/
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.header{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		align-items: center;
+		flex-wrap: wrap; 
+	}
+	.menu{
+		display: flex;
+		margin-right: 100px;
+	}
+	.logo{
+		margin-left: 100px;
+	}
+	.links:hover{
+		color: #808080;
+	}
+	li{
+		margin: 10px;
+		padding: 10px;
+	}
+	img {
+		max-width: 100%;
+		display: block;
+	}
+	/* SECTION SLIDE*/
+	#container{
+		width: 1080px;
+		height: auto;
+		margin:150px auto;
+		background-image: url(IMAGENS/bgcinza.jpg);
+		background-size: cover;
+		padding: 30px;
+	}
+	.principal{
+		width:1080px;
+		height: auto; 
+		overflow: hidden;
+
+	}
+	.slide{
+		display: flex;
+		width: 300%;
+		margin-top: 5px;
+		transition: all 0.8s; 
+	}
+	label img{
+		width: 360px;
+		cursor: pointer;
+		float: left;
+		transition: all 0.4s;
+	}
+	#foto2:checked ~ .principal .slide{
+		margin-left: -100%;
+	}
+	#foto3:checked ~ .principal .slide{
+		margin-left: -200%;
+	}
+	input[name="grupo"]{
+		display: none;
+	}
+
+	/* SECTION FOOTER*/
+	.arquitetura{
+		background-color: #363636;
+		text-align: center;
+		padding: 10px;
+		padding-top: 3px;
+		color: white;
+		
+	}
+	.p1{
+		font-size: 1.5rem;
+		padding: 10px;
+	}
+	.p1 p{
+		padding-top: 10px;
+	}
+	.titulo1{
+		text-align: center;
+		color: white;
+	}
+	/*CSS INTRO*/
+	.intro{
+		padding: 80px;
+		margin-left: 300px;	
+	}
+	.i1{
+		text-align: justify; 
+		text-indent: 35px;
+		font-size: 1.2rem;
+		}
+	/*CSS NOSSO SERVIÇO*/
+	.nosso_servico{
+		background-color: #696969;
+		width: 400px;
+		height: 300px;
+		margin-left:300px;
+		margin-top: 100px;
+		float: left;
+		padding: 5px;
+		border-radius: 20px;
+		color: white;
+		box-shadow: 10px 10px 5px #808080;
+	}
+	.nosso_servico p{
+		text-indent: 30px;
+		text-align: justify;
+		margin-top: 40px;
+		padding: 10px; 
+		}
+	.nm{
+		text-align: left;
+		font-family: Times new Roman,sans-serif;
+		font-size: 1.7rem;
+		margin: 40px;
+	}
+</style>
+</head>
+<body>
+	<header class="header">
+		<a class="logo" href="index.html"><img src="IMAGENS/Só Casas teste.png"></a>
+		<nav>
+			<ul class="menu">
+				<li><a class="links" href="index.html">Home</a></li>
+				<li><a class="links" href="projetos.html">Projetos</a></li>
+				<li><a class="links" href="sobre.html">Sobre</a></li>
+				<li><a class="links" href="contato.html">Contato</a></li>
+				<li><a href="https://www.facebook.com/adriano.maia.94"><img src="IMAGENS/logo_face.png" width="10" height="20"></a></li>
+				<li><a href="https://www.instagram.com/socasasarquitetura/"><img src="IMAGENS/logo_insta.png" width="20" height="20"></a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<section>
+		<div class="nosso_servico">
+			<h3 class="nm">NOSSA MISSÃO</h3>
+			<p>Acreditamos que arquitetura não é apenas um desenho bonito, é muito mais do que isso, arquitetura é Arte! Através dela conseguimos criar espaços onde unir a funcionalidade e a estética é primordial para se criar um ambiente prazeroso para se viver.</p>
+		</div>
+	</section>
+	
+	<section id="container">
+		<section class="intro">
+		<p class="i1">Nosso escritório é preparado para atender clientes conforme sua necessidade. Desde concepção do projeto arquitetônico e seus ambientes, elaboração do projeto estrutural, decoração de interiores e planejamento dos espaços. O escritório também é preparado para atender a execução do projeto com acompanhamento de profissionais de diferentes áreas e, por fim, entregamos sua casa conforme planejado. Todos os serviços com qualidade garantida de quem atua no mercado da construção civil há mais de 35 anos. </p>
+	</section>
+		<input type="radio" id="foto1" name="grupo" checked>
+		<label for="foto1"><img src="IMAGENS/a2.jpg"></label>
+		<input type="radio" id="foto2" name="grupo">
+		<label for="foto2"><img src="IMAGENS/d2.jpg"></label>
+		<input type="radio" id="foto3" name="grupo">
+		<label for="foto3"><img src="IMAGENS/g2.jpg"></label>
+		<div class="principal">
+			<div class="slide">
+				<img src="IMAGENS/a2.jpg" >
+				<img src="IMAGENS/d2.jpg" >
+				<img src="IMAGENS/g2.jpg" >
+			</div>
+		</div>
+	</section>
+	<section class="arquitetura">
+		<footer>
+			<div class="p1">
+				<h2 class="titulo1">Arquitetura</h2>
+				<p>"Arquitetura deve falar de seu tempo e lugar, porém anseia por intemporalidade."</p><p>Frank Gehry</p>
+				<br>
+				<div class="rod_body">
+					<p>© Copyright 2020</p>
+				</div>
+			</div>	
+		</footer>
+	</section>
+
+</body>
+</html>

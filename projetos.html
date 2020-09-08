@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<title>ARQUITETURA/projetos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+	body, ul, li, p{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		font-size: 1.1rem;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.logo{
+		margin-left: 100px;
+	}
+	/*CSS HEADER */
+	.header{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		align-items: center;
+		flex-wrap: wrap;
+		background-color: white;
+	}
+	.menu{
+		display: flex;
+		margin-right: 100px;
+	}
+	.links:hover{
+		color: #808080;
+	}
+	li{
+		margin: 10px;
+		padding: 10px;
+	}
+	img {
+		max-width: 100%;
+		display: block;
+	}
+	/*CSS FLEXBOX 1*/
+	.flex{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.flex > div{
+		flex: 1 1 200px;
+		margin: 5px;
+	}
+	p{
+		background-color: #363636;
+		text-align: center;
+		font-size: 1rem;
+		color: white;
+	}
+	
+	/* SECTION FOOTER*/
+	.arquitetura{
+		background-color: #363636;
+		text-align: center;
+		padding: 10px;
+		padding-top: 3px;
+		color: white;
+		
+	}
+	.p1{
+		font-size: 1.5rem;
+		padding: 10px;
+	}
+	.p1 p{
+		padding-top: 10px;
+	}
+	.titulo1{
+		text-align: center;
+		color: white;
+	}
+</style>
+
+</head>
+<body>
+	<header class="header">
+		<a class="logo" href="index.html"><img src="IMAGENS/Só Casas teste.png"></a>
+		<nav>
+			<ul class="menu">
+				<li><a class="links" href="index.html">Home</a></li>
+				<li><a class="links" href="projetos.html">Projetos</a></li>
+				<li><a class="links" href="sobre.html">Sobre</a></li>
+				<li><a class="links" href="contato.html">Contato</a></li>
+				<li><a href="https://www.facebook.com/adriano.maia.94"><img src="IMAGENS/logo_face.png" width="10" height="20"></a></li>
+				<li><a href="https://www.instagram.com/socasasarquitetura/"><img src="IMAGENS/logo_insta.png" width="20" height="20"></a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<section class="flex">
+		<div>
+			<img src="IMAGENS/a.jpg" alt="fachadas modernas">
+			<p>PORTUGAL</p>
+		</div>
+		<div>
+			<img src="IMAGENS/b.jpg" alt="fachadas modernas">
+			<p>ALEMANHA</p>
+		</div>
+		<div>
+			<img src="IMAGENS/c.jpg" alt="fachadas modernas">
+			<p>BRASIL</p>
+		</div>
+		<div>
+			<img src="IMAGENS/d.jpg" alt="fachadas modernas">
+			<p>CANADA</p>
+		</div>
+		<div>
+			<img src="IMAGENS/e.jpg" alt="fachadas modernas">
+			<p>ESPANHA</p>
+		</div>
+		<div>
+			<img src="IMAGENS/f.jpg" alt="fachadas modernas">
+			<p>AFRICA DO SUL</p>
+		</div>
+		<div>
+			<img src="IMAGENS/g.jpg" alt="fachadas modernas">
+			<p>ESTADOS UNIDOS</p>
+		</div>
+		<div>
+			<img src="IMAGENS/h.jpg" alt="fachadas modernas">
+			<p>NOVA ZELANDIA</p>
+		</div>
+		<div>
+			<img src="IMAGENS/i.jpg" alt="fachadas modernas">
+			<p>PANAMÁ</p>
+		</div>
+		<div>
+			<img src="IMAGENS/Sydney.jpg" alt="fachadas modernas">
+			<p>AUSTRÁLIA</p>
+		</div>
+	</section>
+	<section class="arquitetura">
+		<footer>
+			<div class="p1">
+				<h2 class="titulo1">Arquitetura</h2>
+				<p>"Arquitetura deve falar de seu tempo e lugar, porém anseia por intemporalidade."</p><p>Frank Gehry</p>
+				<br>
+				<div class="rod_body">
+					<p>© Copyright 2020</p>
+				</div>
+			</div>	
+		</footer>
+	</section>
+
+
+</body>
+</html>

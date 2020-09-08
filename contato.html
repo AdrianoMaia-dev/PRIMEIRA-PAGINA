@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<title>ARQUITETURA/contato</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+	body, ul, li, p{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		font-size: 1.2rem;
+		font-family: Times New Roman, Arial, sans-serif;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.header{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		align-items: center;
+		flex-wrap: wrap;
+		background-color: white;
+	}
+	.menu{
+		display: flex;
+		margin-right: 100px;
+	}
+	.logo{
+		margin-left: 100px;
+	}
+	.links:hover{
+		color: #808080;
+	}
+	li{
+		margin: 10px;
+		padding: 10px;
+	}
+	img {
+		max-width: 100%;
+		display: block;
+	}
+	/* SECTION FOOTER*/
+	.arquitetura{
+		background-color: #363636;
+		text-align: center;
+		padding: 10px;
+		padding-top: 3px;
+		color: white;
+		
+	}
+	.p1{
+		font-size: 1rem;
+		padding: 10px;
+	}
+	.p1 p{
+		padding-top: 10px;
+	}
+	.titulo1{
+		text-align: center;
+		color: white;
+		font-size: 1.2rem;	}
+
+	/*FORMULÁRIO CSS*/
+	.content{
+		display: flex;
+		justify-content: center;
+		margin-top: 100px;
+	}
+	.contato{
+		width: 100%;
+		max-width: 500px;
+		background-image: url(IMAGENS/bgcinza.jpg);
+		background-size: cover;
+		border-radius: 20px;
+		padding: 30px;
+	}
+	.form{
+		display: flex;
+		flex-direction: column;
+	}
+	.field{
+		padding: 10px;
+		margin-bottom: 15px;
+		border: 1px solid #DDD;
+		border-radius: 5px;
+		font-family: Times New Roman, Arial, sans-serif;
+		font-size: 16px;
+	}
+	textarea{
+		height: 150px;
+	}
+	/*TEXTO DE CONTATO*/
+	.c_lista{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		float: left;
+		margin-top: 15px;
+	}
+
+
+</style>
+</head>
+<body>
+	<header class="header">
+		<a class="logo" href="index.html"><img src="IMAGENS/Só Casas teste.png"></a>
+			<nav>
+				<ul class="menu">
+					<li><a class="links" href="index.html">Home</a></li>
+					<li><a class="links" href="projetos.html">Projetos</a></li>
+					<li><a class="links" href="sobre.html">Sobre</a></li>
+					<li><a class="links" href="contato.html">Contato</a></li>
+					<li><a href="https://www.facebook.com/adriano.maia.94"><img src="IMAGENS/logo_face.png" width="10" height="20"></a></li>
+					<li><a href="https://www.instagram.com/socasasarquitetura/"><img src="IMAGENS/logo_insta.png" width="20" height="20"></a></li>
+				</ul>
+			</nav>
+	</header>
+	<hr>
+		<section class="content">
+			<div class="contato">
+				<h3>Contato</h3>
+					<form class="form">
+						<input class="field" name="nome" placeholder="Nome">
+						<input class="field" name="email" placeholder="E-mail">
+						<textarea class="field" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+						<input class="field" type="submit" value="Enviar">
+					</form>
+					<div class="c_lista">
+						<h4>Telefone</h4>
+							<p>(44) 99936-2129</p>
+						<h5>E-mail:</h5>
+							<p>arqadrianomaia@gmail.com</p>
+					</div>
+			</div>	
+		</section>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<section class="arquitetura">
+		<footer>
+			<div class="p1">
+				<h2 class="titulo1">Arquitetura</h2>
+				<p>"Arquitetura deve falar de seu tempo e lugar, porém anseia por intemporalidade."</p><p>Frank Gehry</p>
+				<br>
+				<div class="rod_body">
+					<p>© Copyright 2020</p>
+				</div>
+			</div>	
+		</footer>
+	</section>
+		
+
+
+</body>
+</html>
